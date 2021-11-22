@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Age Calculator</h1>
+  <p id="info">Enter your age and find out how many days you've been alive</p>
+
+  <script>
+      const para = document.querySelector('p');
+
+      function age() {
+        const userAge = prompt("How old are you?");
+        const dayAge = userAge * 365;
+        
+        if(dayAge === '') {
+          para.textContent = "Enter your age and find out how many days you've been alive";
+         
+        } else {
+          para.textContent = "Hi, you are " + userAge + " and you are been alive for " + dayAge + " days.";
+        }
+      }
+
+      age()
+  </script>
+</body>
+</html>

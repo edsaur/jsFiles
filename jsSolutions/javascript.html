@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input {
+      font-size: 2em;
+      margin: 10px 1px 0;
+    }
+  </style>
+</head>
+<body>
+  <input class="numberInput" id="favAnimal" type="text">
+  <p></p>
+  <script>
+    const input = document.querySelector('.numberInput');
+    const para = document.querySelector('p');
+  function favAnimal(animal) {
+    return animal;
+  }
+
+  input.onchange = function () {
+      const animal = document.getElementById('favAnimal').value;
+      if (animal === '') {
+        para.textContent = 'Write your favorite animal'
+      } else {
+        para.textContent = favAnimal(animal) + ' is your favorite animal'
+      }
+      return animal;
+  }
+  </script>
+</body>
+</html>
