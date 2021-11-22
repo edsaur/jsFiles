@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.0em;
+  text-align: center;
+  font-family: Arial;
+}
+a {
+  text-decoration: none;
+  color: rgb(246, 94, 12);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgb(184, 65, 65);
+}
+.main, .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 50px;
+  font-size: 1.0em;
+}
+
+.ctn-1 {
+  margin-top: 50px;
+}
